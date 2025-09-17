@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Event Me — Event management & community platform" />
+    <title>Event Me — Event Management & Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="assets/icons/favicon.ico" />
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a href="#top" class="brand" aria-label="Event Me home">
+                <img src="https://png.pngtree.com/png-vector/20220129/ourmid/pngtree-dice-icon-logo-design-template-illustration-win-pictogram-leisure-vector-png-image_44254806.jpg" alt="Event Me" class="brand-logo" />
+                <span class="brand-name">Event Me</span>
+            </a>
+
+            <nav class="primary-nav" aria-label="Primary">
+                <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Toggle menu">
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+                <ul id="nav-list" class="nav-list">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="#community">Community</a></li>
+                    <li><a href="#sponsors">Sponsors</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li class="auth-only" style="display:none"><a href="admin.html">Dashboard</a></li>
+                </ul>
+                <a class="btn btn-ghost" href="login.html">Login</a>
+                <a class="btn btn-primary nav-cta" href="signup.html">Sign up</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="hero" role="banner">
+            <div class="container hero-inner">
+                <div class="hero-copy">
+                    <h1>Plan events. Grow communities.</h1>
+                    <p>All-in-one platform to organize, promote, and engage your audience — from RSVP to recap.</p>
+                    <div class="hero-actions">
+                        <a class="btn btn-primary" href="admin.html">Create an event</a>
+                        <a class="btn btn-ghost" href="#features">See how it works</a>
+                    </div>
+                    <div class="hero-stats">
+                        <div class="stat"><span class="num">2K+</span><span class="label">Events hosted</span></div>
+                        <div class="stat"><span class="num">120K</span><span class="label">Attendees</span></div>
+                        <div class="stat"><span class="num">98%</span><span class="label">Satisfaction</span></div>
+                    </div>
+                </div>
+                <div class="hero-media">
+                    <img src="assets/images/hero-placeholder.png" alt="Event dashboard preview" />
+                </div>
+            </div>
+            <div class="hero-bg" aria-hidden="true"></div>
+        </section>
+
+        <section id="about" class="section section-alt">
+            <div class="container two-col">
+                <div class="col">
+                    <h2>What is Eqinox?</h2>
+                    <p>Eqinox helps teams run memorable events at any scale — meetups, workshops, hackathons, and conferences — with tooling that streamlines logistics and elevates attendee experience.</p>
+                    <ul class="check-list">
+                        <li>End-to-end management workflow</li>
+                        <li>Built-in community tools</li>
+                        <li>Analytics you can act on</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img src="assets/images/about-placeholder.png" alt="Organizing an event" />
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="section">
+            <div class="container">
+                <h2 class="center">Features that power your events</h2>
+                <div class="cards">
+                    <article class="card">
+                        <img src="assets/icons/calendar.svg" alt="Scheduling" />
+                        <h3>Smart scheduling</h3>
+                        <p>Create agendas, tracks, and sessions with drag-and-drop ease.</p>
+                    </article>
+                    <article class="card">
+                        <img src="assets/icons/ticket.svg" alt="Ticketing" />
+                        <h3>Flexible ticketing</h3>
+                        <p>Free or paid tickets, discount codes, and capacity management.</p>
+                    </article>
+                    <article class="card">
+                        <img src="assets/icons/megaphone.svg" alt="Promotion" />
+                        <h3>Promotion tools</h3>
+                        <p>Landing pages, email campaigns, and social share assets.</p>
+                    </article>
+                    <article class="card">
+                        <img src="assets/icons/chat.svg" alt="Community" />
+                        <h3>Community spaces</h3>
+                        <p>Forums, updates, and member profiles to keep people engaged.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="events" class="section section-alt">
+            <div class="container">
+                <h2 class="center">Upcoming showcases</h2>
+                <div class="event-grid">
+                    <article class="event-card">
+                        <img src="assets/images/event-1.png" alt="Tech Summit" />
+                        <div class="event-meta">
+                            <h3>Tech Summit</h3>
+                            <p>Oct 12 • San Francisco, CA</p>
+                            <a href="events.html" class="btn btn-small">RSVP</a>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <img src="assets/images/event-2.png" alt="Design Meetup" />
+                        <div class="event-meta">
+                            <h3>Design Meetup</h3>
+                            <p>Nov 03 • Berlin, DE</p>
+                            <a href="events.html" class="btn btn-small">RSVP</a>
+                        </div>
+                    </article>
+                    <article class="event-card">
+                        <img src="assets/images/event-3.png" alt="Community Hack Night" />
+                        <div class="event-meta">
+                            <h3>Hack Night</h3>
+                            <p>Dec 01 • Remote</p>
+                            <a href="events.html" class="btn btn-small">RSVP</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="community" class="section">
+            <div class="container two-col">
+                <div class="col">
+                    <img src="assets/images/community-placeholder.png" alt="Community members" />
+                </div>
+                <div class="col">
+                    <h2>Built for community</h2>
+                    <p>Create spaces where members connect before, during, and after your events. Share updates, collect feedback, and celebrate wins.</p>
+                    <div class="pill-row">
+                        <span class="pill">Member profiles</span>
+                        <span class="pill">Discussions</span>
+                        <span class="pill">Announcements</span>
+                        <span class="pill">Moderation</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sponsors" class="section section-alt">
+            <div class="container">
+                <h2 class="center">Trusted by teams</h2>
+                <div class="logo-row">
+                    <img src="assets/images/logo-1.png" alt="Brand 1" />
+                    <img src="assets/images/logo-2.png" alt="Brand 2" />
+                    <img src="assets/images/logo-3.png" alt="Brand 3" />
+                    <img src="assets/images/logo-4.png" alt="Brand 4" />
+                    <img src="assets/images/logo-5.png" alt="Brand 5" />
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="section">
+            <div class="container">
+                <h2 class="center">What organizers say</h2>
+                <div class="testimonials">
+                    <blockquote class="quote">
+                        <p>“We grew our monthly meetup from 40 to 300+ with Eqinox.”</p>
+                        <footer>— Jamie Lee, Community Lead</footer>
+                    </blockquote>
+                    <blockquote class="quote">
+                        <p>“Ticketing, comms, and feedback in one place. Huge time-saver.”</p>
+                        <footer>— Priya Gupta, Event Producer</footer>
+                    </blockquote>
+                    <blockquote class="quote">
+                        <p>“The analytics helped us secure new sponsors fast.”</p>
+                        <footer>— Mateo Alvarez, Organizer</footer>
+                    </blockquote>
+                </div>
+            </div>
+        </section>
+
+        <section id="cta" class="section cta">
+            <div class="container cta-inner">
+                <h2>Ready to host your next event?</h2>
+                <p>Start free today. No credit card required.</p>
+                <form class="cta-form" onsubmit="return false;">
+                    <label class="sr-only" for="email">Work email</label>
+                    <input id="email" type="email" placeholder="Your work email" required />
+                    <button class="btn btn-primary" type="submit">Get started</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="brand-col">
+                <a href="#top" class="brand">
+                    <img src="https://png.pngtree.com/png-vector/20220129/ourmid/pngtree-dice-icon-logo-design-template-illustration-win-pictogram-leisure-vector-png-image_44254806.jpg" alt="Event Me" class="brand-logo" />
+                    <span class="brand-name">Event Me</span>
+                </a>
+                <p class="small">© <span id="year"></span> Event Me. All rights reserved.</p>
+            </div>
+            <nav class="footer-nav" aria-label="Footer">
+                <a href="#about">About</a>
+                <a href="#features">Features</a>
+                <a href="events.html">Events</a>
+                <a href="#community">Community</a>
+                <a href="#sponsors">Sponsors</a>
+                <a href="#testimonials">Testimonials</a>
+            </nav>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <noscript>Enable JavaScript for the best experience.</noscript>
+</body>
+</html>
+

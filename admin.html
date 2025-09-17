@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event Me — Admin</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header">
+        <div class="container header-inner">
+            <a href="index.html#top" class="brand"><img src="https://png.pngtree.com/png-vector/20220129/ourmid/pngtree-dice-icon-logo-design-template-illustration-win-pictogram-leisure-vector-png-image_44254806.jpg" class="brand-logo" alt="Event Me" /><span class="brand-name">Event Me</span></a>
+            <nav class="primary-nav" aria-label="Primary">
+                <a class="btn btn-ghost" href="events.html">View Events</a>
+                <button id="logout-btn" class="btn btn-ghost" type="button">Logout</button>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="section">
+            <div class="container">
+                <h1>Event Management</h1>
+                <div class="card" style="margin-top:14px;">
+                    <form id="event-form">
+                        <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;">
+                            <label>Title<input id="ev-title" required placeholder="Event title" /></label>
+                            <label>Date<input id="ev-date" type="date" required /></label>
+                            <label>City<input id="ev-city" placeholder="City, Country" required /></label>
+                            <label>Image URL<input id="ev-image" placeholder="assets/images/event-1.png" /></label>
+                            <label style="grid-column:1/-1;">Description<textarea id="ev-desc" rows="3" placeholder="Short description"></textarea></label>
+                            <div style="grid-column:1/-1;display:flex;gap:10px;">
+                                <button class="btn btn-primary" type="submit">Save Event</button>
+                                <button class="btn btn-ghost" type="reset">Clear</button>
+                            </div>
+                        </div>
+                        <input type="hidden" id="ev-id" />
+                    </form>
+                </div>
+
+                <div style="margin-top:18px;" class="card">
+                    <h3 style="margin:0 0 8px 0;">Your Events</h3>
+                    <div id="admin-events" class="event-grid"></div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+

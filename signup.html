@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Event Me — Sign up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <header class="site-header" id="top">
+        <div class="container header-inner">
+            <a href="index.html#top" class="brand" aria-label="Event Me home">
+                <img src="https://png.pngtree.com/png-vector/20220129/ourmid/pngtree-dice-icon-logo-design-template-illustration-win-pictogram-leisure-vector-png-image_44254806.jpg" alt="Event Me" class="brand-logo" />
+                <span class="brand-name">Event Me</span>
+            </a>
+            <nav class="primary-nav" aria-label="Primary">
+                <a class="btn btn-ghost" href="events.html">Browse Events</a>
+                <a class="btn btn-primary" href="login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container" style="max-width:560px;">
+                <h1 class="center">Sign up</h1>
+                <p class="center" style="color:var(--muted)">Create an account. Use the admin checkbox for organizer access.</p>
+                <div class="card" style="margin-top:16px;">
+                    <form id="signup-form">
+                        <div style="display:grid;gap:10px;">
+                            <label>Email<input type="email" id="signup-email" placeholder="you@company.com" required /></label>
+                            <label>Password<input type="password" id="signup-password" placeholder="••••••••" required /></label>
+                            <label style="display:flex;align-items:center;gap:8px;">
+                                <input type="checkbox" id="signup-admin" /> Create as admin
+                            </label>
+                            <div style="display:flex;gap:10px;flex-wrap:wrap;">
+                                <button class="btn btn-primary" type="submit">Create account</button>
+                            </div>
+                            <p class="small">Already have an account? <a href="login.html">Login</a></p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
